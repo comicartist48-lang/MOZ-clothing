@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Moz Clothing — Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Moz <span>Clothing</span></div>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="hero-inner">
+      <h1>Minimal. Modern. Moz Clothing.</h1>
+      <p>Premium streetwear inspired by everyday life. Browse our latest collection.</p>
+      <a class="btn" href="#shop">Shop Now</a>
+    </div>
+  </main>
+
+  <section id="shop" class="products-section">
+    <h2>Featured Products</h2>
+    <div class="products-grid">
+      <article class="product-card">
+        <img src="assets/product1.svg" alt="Classic Tee">
+        <h3>Classic Tee</h3>
+        <div class="price">PKR 1,499</div>
+        <div class="actions">
+          <a class="btn small" href="https://wa.me/92300XXXXXXX?text=I%20want%20to%20order%20Classic%20Tee" target="_blank">Order via WhatsApp</a>
+          <button class="btn outline" onclick="addToCart('Classic Tee', 1499)">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img src="assets/product2.svg" alt="Hooded Jacket">
+        <h3>Hooded Jacket</h3>
+        <div class="price">PKR 3,499</div>
+        <div class="actions">
+          <a class="btn small" href="https://wa.me/92300XXXXXXX?text=I%20want%20to%20order%20Hooded%20Jacket" target="_blank">Order via WhatsApp</a>
+          <button class="btn outline" onclick="addToCart('Hooded Jacket', 3499)">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img src="assets/product3.svg" alt="Slim Jeans">
+        <h3>Slim Jeans</h3>
+        <div class="price">PKR 2,299</div>
+        <div class="actions">
+          <a class="btn small" href="https://wa.me/92300XXXXXXX?text=I%20want%20to%20order%20Slim%20Jeans" target="_blank">Order via WhatsApp</a>
+          <button class="btn outline" onclick="addToCart('Slim Jeans', 2299)">Add to Cart</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Moz Clothing</h2>
+    <p>Moz Clothing is a small local brand focused on minimal, high-quality streetwear. We accept orders via WhatsApp and offer Cash on Delivery (COD) across selected cities.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact & Payment (Trial bank details)</h2>
+    <p>Order via WhatsApp: <a href="https://wa.me/92300XXXXXXX">+92 300 XXXXXXX</a></p>
+    <p><strong>Trial / Sample Bank Details (DO NOT USE FOR REAL PAYMENTS)</strong></p>
+    <div class="bank">
+      <div><strong>Bank:</strong> Test Bank</div>
+      <div><strong>Account Title:</strong> Moz Clothing (TEST)</div>
+      <div><strong>Account No:</strong> 000123456789</div>
+      <div><strong>IBAN:</strong> PK00TEST000123456789</div>
+      <div class="small-note">These are sample/trial details included only for demonstration. Replace with your real bank details before accepting transfers.</div>
+    </div>
+
+    <h3>Your Cart</h3>
+    <div id="cart" class="cart">
+      <p class="empty">Your cart is empty.</p>
+      <div id="cart-items"></div>
+      <div id="cart-summary" class="cart-summary" style="display:none;">
+        <div>Total: <span id="cart-total">PKR 0</span></div>
+        <button class="btn" id="checkoutBtn">Checkout (show instructions)</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div>© Moz Clothing — Handmade with care</div>
+    <div>Made for demo & quick launch • Replace trial bank details before going live</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
